@@ -1,8 +1,6 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
-import { useScreenType } from '../hooks/getScreenType';
-import { FaBars } from 'react-icons/fa';
 
 interface Props {}
 
@@ -36,27 +34,9 @@ const items: Page[] = [
   { name: 'Projects', target: '/projects' },
 ];
 
-export const Header: React.FC<Props> = () => {
-  const screenType = useScreenType();
+export const Navbar: React.FC<Props> = () => {
   const links = useMemo(() => createLinks(items), []);
-
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  // FOR MOBILE
-  if (screenType === 'mobile') {
-    if (!menuOpen) {
-      return (
-        <div className="navbar">
-          <FaBars onClick={() => setMenuOpen(true)} />
-        </div>
-      );
-    } else {
-      return <div className="navbar"></div>;
-    }
-  }
-
-  // WHEN NOT ON MOBILE
   return <div className="navbar">{links}</div>;
 };
 
-export default Header;
+export default Navbar;

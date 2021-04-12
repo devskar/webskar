@@ -1,0 +1,38 @@
+.navbar {
+  overflow: hidden;
+
+  margin-top: 4rem;
+  margin-right: 10rem;
+
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.link {
+  border: 0.1rem solid var(--primary-text);
+
+  margin: 1rem;
+
+  color: var(--secondary);
+  padding: 1rem 2rem;
+
+  text-decoration: none;
+
+  font-family: 'Archivo', sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.link:hover {
+  background-color: var(--primary-text);
+  color: var(--tetriary);
+  border-color: var(--tetriary);
+
+  margin: 0.9rem;
+  border-width: 0.2rem;
+}
+
+.active {
+  color: var(--tetriary);
+}

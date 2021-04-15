@@ -11,13 +11,15 @@ const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Header />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/projects" exact component={Projects} />
-        <Route path="/visuals" exact component={Visuals} />
-        <Route path="/404Page" component={NotFound} />
-        <Redirect to="/404Page" />
-      </Switch>
+      <div id="page-container">
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/projects" exact component={Projects} />
+          <Route path="/visuals" exact component={Visuals} />
+          <Route path="/404Page" component={NotFound} />
+          <Redirect to="/404Page" />
+        </Switch>
+      </div>
     </BrowserRouter>
   );
 };

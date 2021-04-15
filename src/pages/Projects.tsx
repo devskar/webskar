@@ -76,12 +76,10 @@ export const Projects: React.FC<Props> = () => {
   const cards = useMemo(() => jsonToCards(data), [data]);
 
   return (
-    <div className="project-page">
-      <div className="project-container">
-        <h2 className="project-heading">Projects</h2>
-        <div className="project-list">{cards}</div>
-      </div>
-    </div>
+    <>
+      <h2 className="page-title">Projects</h2>
+      <div className="project-list">{cards}</div>
+    </>
   );
 };
 

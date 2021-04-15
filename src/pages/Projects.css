@@ -1,15 +1,3 @@
-.project-container {
-  width: 75%;
-  margin: 0 auto;
-}
-
-.project-heading {
-  font-size: 60px;
-  font-family: var(--font-primary);
-
-  color: var(--primary-text);
-}
-
 .project-list {
   display: flex;
   flex-wrap: wrap;

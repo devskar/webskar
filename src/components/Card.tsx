@@ -3,8 +3,8 @@ import './Card.css';
 
 interface Props {
   heading: string;
-  subheading: string;
-  link: string;
+  subheading?: string;
+  link?: string;
 }
 
 const Card: React.FC<Props> = ({ heading, subheading, link }) => {

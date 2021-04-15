@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Page } from '../../utils/const';
+import { Page } from '../utils/const';
 import './Navbar.css';
 
 interface Props {
@@ -10,16 +10,16 @@ interface Props {
 const createLinks = (pages: Page[]) => {
   const links: JSX.Element[] = [];
 
-  pages.forEach((page, idx) => {
+  pages.forEach(({ name, target }, idx) => {
     links.push(
       <NavLink
         key={idx}
         className="link"
         activeClassName="active"
         exact
-        to={page.target}
+        to={target}
       >
-        {page.name}
+        {name}
       </NavLink>
     );
   });

@@ -1,3 +1,5 @@
+// UNUSEE // MAYBE USED IN LATER VERSION
+
 import { useMediaQuery } from 'react-responsive';
 
 export type ScreenType = 'desktop' | 'tablet' | 'mobile';

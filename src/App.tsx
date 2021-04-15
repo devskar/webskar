@@ -6,6 +6,7 @@ import Visuals from './pages/Visuals';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Projects from './pages/Projects';
+import GameOfLife from './pages/visuals/GameOfLife';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
           <Route path="/" exact component={Home} />
           <Route path="/projects" exact component={Projects} />
           <Route path="/visuals" exact component={Visuals} />
+          <Route path="/visuals/gameoflife" exact component={GameOfLife} />
           <Route path="/404Page" component={NotFound} />
           <Redirect to="/404Page" />
         </Switch>

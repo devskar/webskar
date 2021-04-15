@@ -8,3 +8,7 @@ export const pages: Page[] = [
   { name: 'Projects', target: '/projects' },
   { name: 'Visuals', target: '/visuals' },
 ];
+
+export const visuals: Page[] = [
+  { name: 'Game of Life', target: '/visuals/gameoflife' },
+];

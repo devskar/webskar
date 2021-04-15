@@ -5,9 +5,9 @@ interface Props {}
 
 export const Home: React.FC<Props> = () => {
   return (
-    <div className="home-page">
-      <h1>Oskar Page</h1>
-    </div>
+    <>
+      <h2 className="page-title">Oskar Page</h2>
+    </>
   );
 };
 

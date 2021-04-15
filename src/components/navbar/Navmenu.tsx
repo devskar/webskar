@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Page } from '../../utils/const';
+import './Navmenu.css';
 
-interface Props {}
+interface Props {
+  pages: Page[];
+}
 
-export const Navmenu: React.FC<Props> = () => {
+export const Navmenu: React.FC<Props> = ({ pages }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -13,6 +17,12 @@ export const Navmenu: React.FC<Props> = () => {
       </div>
     </div>
   );
+};
+
+interface Props {}
+
+export const Dropdown: React.FC<Props> = () => {
+  return <></>;
 };
 
 export default Navmenu;

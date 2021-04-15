@@ -14,9 +14,5 @@
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-}
-
-.project-list > * {
-  margin: 30px;
-  margin-left: 0px;
+  gap: 2rem;
 }

@@ -1,12 +1,10 @@
 import React, { useMemo } from 'react';
 import { NavLink } from 'react-router-dom';
+import { Page } from '../../utils/const';
 import './Navbar.css';
 
-interface Props {}
-
-interface Page {
-  name: string;
-  target: string;
+interface Props {
+  pages: Page[];
 }
 
 const createLinks = (pages: Page[]) => {
@@ -29,13 +27,8 @@ const createLinks = (pages: Page[]) => {
   return links;
 };
 
-const items: Page[] = [
-  { name: 'Home', target: '/' },
-  { name: 'Projects', target: '/projects' },
-];
-
-export const Navbar: React.FC<Props> = () => {
-  const links = useMemo(() => createLinks(items), []);
+export const Navbar: React.FC<Props> = ({ pages }) => {
+  const links = useMemo(() => createLinks(pages), [pages]);
   return <div className="navbar">{links}</div>;
 };
 

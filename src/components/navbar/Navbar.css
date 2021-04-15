@@ -36,14 +36,3 @@
 .active {
   color: var(--tetriary);
 }
-
-.nav-icon {
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 3rem;
-}
-
-.nav-icon > * {
-  color: var(--tetriary);
-  font-size: 3rem;
-}

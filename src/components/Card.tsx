@@ -8,12 +8,21 @@ interface Props {
 }
 
 const Card: React.FC<Props> = ({ heading, subheading, link }) => {
+  if (link) {
+    return (
+      <div className="card">
+        <a className="card-link" target="_blank" rel="noreferrer" href={link}>
+          <p className="heading">{heading}</p>
+          <p className="subheading">{subheading}</p>
+        </a>
+      </div>
+    );
+  }
+
   return (
     <div className="card">
-      <a className="card-link" target="_blank" rel="noreferrer" href={link}>
-        <p className="heading">{heading}</p>
-        <p className="subheading">{subheading}</p>
-      </a>
+      <p className="heading">{heading}</p>
+      <p className="subheading">{subheading}</p>
     </div>
   );
 };

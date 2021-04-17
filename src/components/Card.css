@@ -6,8 +6,6 @@
   padding: 15px;
   border: 3px solid var(--secondary);
 
-  text-decoration: none;
-
   overflow: hidden;
 }
 
@@ -16,10 +14,6 @@
 }
 
 .card-link {
-  text-decoration: none;
-}
-
-.card-link > * {
   text-decoration: none;
 }
 

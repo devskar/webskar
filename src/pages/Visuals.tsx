@@ -8,9 +8,9 @@ interface Props {}
 const createCards = () => {
   const cards: JSX.Element[] = [];
 
-  visuals.forEach(({ name, target }) => {
+  visuals.forEach(({ name, target }, idx) => {
     cards.push(
-      <Link to={target}>
+      <Link to={target} key={idx} style={{ textDecoration: 'none' }}>
         <Card heading={name} />
       </Link>
     );

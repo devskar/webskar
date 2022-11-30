@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import Card from '../../components/Card';
 import { useFetch } from '../../hooks/useFetch';
-import './Projects.css';
+import './projects.css';
 
 const DESCRIPTION_MAX_LENGTH = 50;
 

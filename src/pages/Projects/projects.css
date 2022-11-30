@@ -1,0 +1,12 @@
+.project-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	/* gap: 2rem; not suppordet in safari yet*/
+  }
+  
+  .project-list > * {
+	margin: 30px;
+	margin-left: 0px;
+	margin-top: 0px;
+  }
